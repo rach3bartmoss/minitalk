@@ -6,15 +6,12 @@
 /*   By: dopereir <dopereir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 22:23:02 by dopereir          #+#    #+#             */
-/*   Updated: 2024/10/18 22:28:51 by dopereir         ###   ########.fr       */
+/*   Updated: 2024/10/19 15:02:53 by dopereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <signal.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/types.h>
+#include "minitalk.h"
+#include "libftprintf.h"
 
 volatile sig_atomic_t	g_bit_set = 0;
 
@@ -72,7 +69,7 @@ int	main(int ac, char **av)
 		write(1, "Usage: %s <server_pid> <message>\n", 34);
 		return (0);
 	}
-	pid = atoi(av[1]);
+	pid = ft_atoi(av[1]);
 	sa.sa_sigaction = (void *)ack_handler;
 	sigaction (SIGUSR2, &sa, NULL);
 	sigaction (SIGUSR1, &sa, NULL);

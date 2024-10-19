@@ -6,7 +6,7 @@
 /*   By: dopereir <dopereir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 21:40:10 by dopereir          #+#    #+#             */
-/*   Updated: 2024/10/18 22:30:15 by dopereir         ###   ########.fr       */
+/*   Updated: 2024/10/19 15:07:34 by dopereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,11 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <sys/types.h>
+//# include "libft.h"
+# include "libftprintf.h"
 
-typedef struct	s_client_info
+typedef struct s_client_info
 {
 	pid_t			pid;
 	int				bit_count;
@@ -28,6 +31,8 @@ typedef struct	s_client_info
 void	send_bit(int pid, int bit);
 void	send_char(int pid, unsigned char c);
 void	send_string(int pid, const char *str);
+
+int		ft_atoi(const char *str);
 
 void	signal_handler(int signum, siginfo_t *info, void *context);
 

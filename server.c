@@ -6,16 +6,12 @@
 /*   By: dopereir <dopereir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 21:40:08 by dopereir          #+#    #+#             */
-/*   Updated: 2024/10/18 22:26:57 by dopereir         ###   ########.fr       */
+/*   Updated: 2024/10/19 15:03:14 by dopereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <signal.h>
-#include <sys/types.h>
-//#include <sys/siginfo.h>
-#include <stdio.h>
-
+//#include "libft.h"
+#include "libftprintf.h"
 #include "minitalk.h"
 
 void	signal_handler(int signum, siginfo_t *info, void *context)
@@ -60,7 +56,7 @@ int	main(void)
 		write(1, "Error setting up signal handler\n", 33);
 		return (EXIT_FAILURE);
 	}
-	printf("Server PID: %d\n", getpid());
+	ft_printf("Server PID: %d\n", getpid());
 	while (1)
 		pause();
 	return (0);
