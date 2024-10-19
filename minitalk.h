@@ -6,7 +6,7 @@
 /*   By: dopereir <dopereir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 21:40:10 by dopereir          #+#    #+#             */
-/*   Updated: 2024/10/19 15:07:34 by dopereir         ###   ########.fr       */
+/*   Updated: 2024/10/19 15:14:25 by dopereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <sys/types.h>
-//# include "libft.h"
 # include "libftprintf.h"
 
 typedef struct s_client_info

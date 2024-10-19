@@ -6,11 +6,10 @@
 /*   By: dopereir <dopereir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 21:40:08 by dopereir          #+#    #+#             */
-/*   Updated: 2024/10/19 15:03:14 by dopereir         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:47:36 by dopereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
 #include "libftprintf.h"
 #include "minitalk.h"
 

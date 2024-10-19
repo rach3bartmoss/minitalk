@@ -6,13 +6,14 @@
 /*   By: dopereir <dopereir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 22:23:02 by dopereir          #+#    #+#             */
-/*   Updated: 2024/10/19 15:02:53 by dopereir         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:10:20 by dopereir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 #include "libftprintf.h"
 
+//sig_atomic_t as a system typedef int
 volatile sig_atomic_t	g_bit_set = 0;
 
 void	ack_handler(int signum)
